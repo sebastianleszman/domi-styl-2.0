@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,22 +26,55 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- container-->
-    <div class="container">
-      <!-- baner section-->
-      <section id="baner-section" class="grid">
-        <span>
+    <!-- container__main -->
+    <div class="container__main">
+      <!-- section__banner-->
+      <section id="section__banner" class="grid">
+        <span class="phone1">
           <i class="fas fa-phone-alt"></i>
           <p>535 808 076</p>
         </span>
-        <span>
-          <i class="fas fa-envelope"></i>
-          <p>meble.domistyl@gmail.com</p>
-        </span>
-        <span>
+        <span class="phone2">
           <i class="fas fa-phone-alt"></i>
           <p>790 581 681</p>
         </span>
+        <span class="mail">
+          <i class="fas fa-envelope"></i>
+          <p>meble.domistyl@gmail.com</p>
+        </span>
+      </section>
+
+      <!-- section__logo -->
+      <section id="section__logo">
+        <div class="wrapper">
+          <div class="logo">
+            <div class="img__div">
+              <img
+                src="./assets/logo/logo.jpg"
+                alt="Logo"
+                class="img--contain"
+              />
+            </div>
+            <h1>Domi Styl</h1>
+          </div>
+        </div>
+      </section>
+
+      <!-- section__menu__main-->
+      <section id="section__menu__main">
+        <div class="wrapper">
+          <nav id="navbar">
+            <a href="#home">Strona Główna</a>
+            <a href="#products">Produkty</a>
+            <a href="#contact">Kontakt</a>
+            <a href="#about">O Nas</a>
+          </nav>
+        </div>
+      </section>
+      <section id="section__content">
+        <div class="wrapper">
+          <div id="content"></div>
+        </div>
       </section>
     </div>
     <script src="./app.js"></script>
