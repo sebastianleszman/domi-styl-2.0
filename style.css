@@ -122,39 +122,47 @@ img {
 }
 /* section__menu__main */
 #section__menu__main {
-  display: none; /* ----------------------------------------------------------------------------------------- */
-  grid-area: menu;
-}
-nav {
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-}
-nav a {
-  border: 1px solid #fff;
-  border-radius: 25px;
-  padding: 20px 30px;
-  margin: 10px;
-  font-size: 1.5em;
-}
-nav a:hover {
-  border-color: #000;
-}
-nav a.active {
-  border-color: orange;
+  display: none;
 }
 /* section__content */
 #section__content {
-  display: none; /* -------------------------------------------------------------------------------------------------------- */
+  display: none;
 }
 /* ---------------- Tablet -------------------------------------*/
 @media (min-width: 620px) {
 }
 /* ---------------- Laptop -------------------------------------*/
-@media (min-width: 960) {
+@media (min-width: 960px) {
+  /* section__menu__main */
+  #section__menu__main {
+    display: block;
+    grid-area: menu;
+  }
+  nav {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  nav a {
+    border: 1px solid #fff;
+    border-radius: 25px;
+    padding: 20px 30px;
+    margin: 10px;
+    font-size: 1.5em;
+  }
+  nav a:hover {
+    border-color: #000;
+  }
+  nav a.active {
+    border-color: orange;
+  }
+  /* section__content */
+  #section__content {
+    display: block;
+  }
 }
 /* ---------------- Desktop -------------------------------------*/
-@media (min-width: 1200) {
+@media (min-width: 1200px) {
 }
