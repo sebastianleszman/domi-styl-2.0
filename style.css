@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Great+Vibes&display=swap");
+/* variables */
+:root {
+  --primary: orange;
+  --primary-light: #f59921;
+  --primary-bg: rgba(245, 153, 33, 0.6);
+  --primary-bg-light: rgba(245, 153, 33, 0.1);
+  --yellow: #ff8d41;
+  --white-trans: rgba(255, 255, 255, 0.5);
+  --white: #fff;
+  --light: #ddd;
+  --silver: #c0c0c0;
+  --gray: #707070;
+  --dark: #333;
+  --black: #000;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  list-style: none;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  background-color: #fff;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+/* ----------------- Utilieties --------------------------------*/
+.grid {
+  display: grid;
+  gap: 10px;
+}
+.active {
+  color: #fff;
+  background-color: orange;
+}
+/* ---------------- Mobile -------------------------------------*/
+/* container */
+.container {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-rows: 10vh; */
+  grid-template-areas: "banner banner";
+}
+/* baner section */
+#baner-section {
+  grid-area: banner;
+  width: 100%;
+  padding: 10px 30px;
+  background-color: var(--black);
+  color: var(--white);
+  text-align: left;
+}
+#baner-section span {
+  font-size: 0.75em;
+  display: flex;
+  color: var(--white);
+}
+#baner-section span i {
+  color: var(--primary-light);
+  font-size: 1em;
+  margin-right: 1em;
+}
+/* 
+nav {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+nav a {
+  border: 2px solid #fff;
+  border-radius: 25px;
+  padding: 20px 30px;
+  margin: 10px;
+}
+nav a:hover {
+  border-color: #000;
+}
+nav a.active {
+  border-color: orange;
+} */
+/* ---------------- Tablet -------------------------------------*/
+@media (min-width: 620px) {
+}
+/* ---------------- Laptop -------------------------------------*/
+@media (min-width: 960) {
+}
+/* ---------------- Desktop -------------------------------------*/
+@media (min-width: 1200) {
+}
