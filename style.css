@@ -155,19 +155,60 @@ img {
   height: 100%;
   object-fit: contain;
 } */
-/* info section */
+/* info__section */
 #section__info {
   padding: 40px 30px;
   text-align: center;
   /* background-color: pink; */
 }
 #section__info h1 {
-  /* line-height: 1.1; */
-  margin-bottom: 35px;
+  margin-bottom: 2em;
 }
 #section__info p {
   color: var(--gray);
-  /* line-height: 1.2; */
+}
+/* doswiadczenie__section */
+#section__doswiadczenie {
+  /* margin-bottom: 3em; */
+  text-align: center;
+  background-image: url(../assets/tlo-szafka.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: var(--white-trans);
+  background-blend-mode: screen;
+}
+.doswiadczenie__text {
+  padding: 40px 30px;
+}
+.doswiadczenie__text h1 {
+  font-size: 1.5em;
+  margin-bottom: 2em;
+  color: var(--yellow);
+}
+.doswiadczenie__text p {
+  font-size: 1em;
+  color: var(--dark);
+}
+.doswiadczenie__card__panel {
+  padding: 40px 30px;
+  display: grid;
+  gap: 0;
+  grid-template-columns: 1fr;
+}
+.doswiadczenie-card {
+  margin-bottom: 2em;
+}
+.doswiadczenie-card i {
+  color: var(--yellow);
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+.doswiadczenie-card h1 {
+  color: var(--dark);
+}
+.doswiadczenie-card h4 {
+  color: var(--black);
 }
 /* ---------------- Tablet -------------------------------------*/
 @media (min-width: 620px) {
