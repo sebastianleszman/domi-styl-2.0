@@ -127,12 +127,12 @@ img {
 }
 /* section__menu__main */
 #section__menu__main {
-  display: none;
+  /* display: none; */
   margin-bottom: 3em;
 }
 /* section__content */
 #section__content {
-  display: none;
+  /* display: none; */
 }
 /* section__carousel */
 /* #section__carousel {
