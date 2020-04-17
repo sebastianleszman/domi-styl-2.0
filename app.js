@@ -1,3 +1,5 @@
+// -------------------------------------------------------------------------------------------------------------
+// single page fuctionality
 // gets the appropriate content for a given fragment identifier
 const getContent = (fragmentId) => {
   fetch(`${fragmentId}.html`)
@@ -25,13 +27,19 @@ const setActiveLink = (fragmentId) => {
 const navigate = () => {
   const fragmentId = location.hash.substr(1);
   getContent(fragmentId);
+
   // toggle the 'active' class on the currently navigated link
   setActiveLink(fragmentId);
 };
+// ----------------------------------------------------------------------------------------------------------------
 
-// if no fragment identifier is provide
-if (!location.hash) location.hash = "#home";
+const startNavigating = () => {
+  // if no fragment identifier is provide
+  if (!location.hash) location.hash = "#home";
 
-navigate();
+  navigate();
 
-addEventListener("hashchange", navigate);
+  addEventListener("hashchange", navigate);
+};
+
+startNavigating();

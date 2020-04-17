@@ -60,6 +60,11 @@ img {
   height: 100%;
   object-fit: contain;
 }
+.img--cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 /* ---------------- Mobile -------------------------------------*/
 /* container__main */
 .container__main {
@@ -123,13 +128,64 @@ img {
 /* section__menu__main */
 #section__menu__main {
   display: none;
+  margin-bottom: 3em;
 }
 /* section__content */
 #section__content {
   display: none;
 }
+/* section__carousel */
+/* #section__carousel {
+  width: 100%;
+  padding: 0;
+}
+.carousel-slider {
+  background-color: var(--white);
+}
+.img-align-center {
+  height: 30vh;
+}
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img-contain {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+} */
+/* info section */
+#section__info {
+  padding: 40px 30px;
+  text-align: center;
+  /* background-color: pink; */
+}
+#section__info h1 {
+  /* line-height: 1.1; */
+  margin-bottom: 35px;
+}
+#section__info p {
+  color: var(--gray);
+  /* line-height: 1.2; */
+}
 /* ---------------- Tablet -------------------------------------*/
 @media (min-width: 620px) {
+  /* section__banner */
+  #section__banner {
+    grid-template-areas:
+      "phone1 mail"
+      "phone2 .";
+    justify-items: center;
+  }
+
+  #section__banner span {
+    font-size: 1.2em;
+  }
+  #section__banner span i {
+    font-size: 1.2em;
+    margin-right: 1em;
+  }
 }
 /* ---------------- Laptop -------------------------------------*/
 @media (min-width: 960px) {
