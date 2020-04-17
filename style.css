@@ -210,6 +210,47 @@ img {
 .doswiadczenie-card h4 {
   color: var(--black);
 }
+/* section__contact */
+#section__contact {
+  padding: 30px 20px;
+  background-color: var(--primary-bg);
+}
+#section__contact h3 {
+  text-align: center;
+  margin-bottom: 0;
+  color: var(--dark);
+}
+#section__contact form {
+  width: 80%;
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+}
+#section__contact input,
+#section__contact textarea {
+  width: 100%;
+  color: var(--black);
+  margin: 10px 0;
+}
+#section__contact .btn {
+  background-color: rgba(20, 20, 20, 0.8);
+  color: var(--primary);
+  border-color: var(--primary);
+} /* footer */
+footer {
+  width: 100%;
+  background-color: var(--dark);
+  color: var(--white);
+  padding: 30px 20px;
+}
+.footer-text-col {
+  text-align: center;
+  line-height: 1.2;
+  margin: 1rem;
+}
+.footer-text-col h3 {
+  color: var(--primary-light);
+}
 /* ---------------- Tablet -------------------------------------*/
 @media (min-width: 620px) {
   /* section__banner */
